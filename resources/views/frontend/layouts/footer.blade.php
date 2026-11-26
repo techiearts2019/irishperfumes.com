@@ -42,7 +42,6 @@
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
                                         <li class="text-caption-1"><a href="{{ config('app.url') }}" class="footer-menu_item">Home</a>
-                                        <li class="text-caption-1"><a href="{{ config('app.url') }}" class="footer-menu_item">About Us</a>
                                         <li class="text-caption-1"><a href="{{ route('shop', 'new-arrivals') }}" class="footer-menu_item">New Arrivals</a></li>
                                         <li class="text-caption-1"><a href="{{ route('shop', 'our-collections') }}" class="footer-menu_item">Our Collections</a></li>
                                         <li class="text-caption-1"><a href="{{ route('shop', 'best-sellers') }}" class="footer-menu_item">Best Sellers</a></li>
@@ -56,18 +55,10 @@
                                 </div>
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Shipping Policy</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Return & Refund</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Privacy Policy</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="term-of-use.html" class="footer-menu_item">Terms & Conditions</a>
-                                        </li>
+                                        <li class="text-caption-1"><a href="#" class="footer-menu_item">Privacy Policy</a></li>
+                                        <li class="text-caption-1"><a href="#" class="footer-menu_item">Return & Refund</a></li>
+                                        <li class="text-caption-1"><a href="#" class="footer-menu_item">Shipping Policy</a></li>
+                                        <li class="text-caption-1"><a href="#" class="footer-menu_item">Terms & Conditions</a></li>
                                     </ul>
                                 </div>
                             </div>

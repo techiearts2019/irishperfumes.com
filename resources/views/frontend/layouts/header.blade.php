@@ -38,11 +38,11 @@
             <div class="col-xl-6 d-none d-xl-block">
                 <nav class="box-navigation text-center">
                     <ul class="box-nav-ul d-flex align-items-center justify-content-center">
-                        <li class="menu-item active"><a href="{{ config('app.url') }}" class="item-link">Home</a></li>
-                        <li class="menu-item"><a href="{{ route('shop', 'new-arrivals') }}" class="item-link">New Arrivals</a></li>
-                        <li class="menu-item"><a href="{{ route('shop', 'our-collections') }}" class="item-link">Our Collections</a></li>
-                        <li class="menu-item"><a href="{{ route('shop', 'best-sellers') }}" class="item-link">Best Sellers</a></li>
-                        <li class="menu-item"><a href="{{ route('find-us') }}" class="item-link">Find Us</a></li>
+                        <li @class(['menu-item', 'active' => request()->is('/')])><a href="{{ config('app.url') }}" class="item-link">Home</a></li>
+                        <li @class(['menu-item', 'active' => request()->is('new-arrivals')])><a href="{{ route('shop', 'new-arrivals') }}" class="item-link">New Arrivals</a></li>
+                        <li @class(['menu-item', 'active' => request()->is('our-collections')])><a href="{{ route('shop', 'our-collections') }}" class="item-link">Our Collections</a></li>
+                        <li @class(['menu-item', 'active' => request()->is('best-sellers')])><a href="{{ route('shop', 'best-sellers') }}" class="item-link">Best Sellers</a></li>
+                        <li @class(['menu-item', 'active' => request()->is('find-us')])><a href="{{ route('find-us') }}" class="item-link">Find Us</a></li>
                     </ul>
                 </nav>
             </div>
