@@ -17,8 +17,8 @@
         <meta property="og:image" content="@yield('ogimage')" />
         <meta property="og:url" content="@yield('ogurl')" />
         <meta property="og:type" content="E-commerce Website" />
-        <link rel="shortcut icon" href="{{ asset('asset/images/logo/favicon.png') }}">
-        <link rel="apple-touch-icon-precomposed" href="{{ asset('asset/images/logo/favicon.png') }} ">
+        <link rel="shortcut icon" href="{{ asset('asset/images/favicon.webp') }}">
+        <link rel="apple-touch-icon-precomposed" href="{{ asset('asset/images/favicon.webp') }} ">
         @include('frontend.layouts.style')
     </head>
     <body class="preload-wrapper">

@@ -1,4 +1,4 @@
-<footer id="footer" class="footer">
+<footer id="footer" class="footer bg_F4F4F5">
     <div class="footer-wrap">
         <div class="footer-body">
             <div class="container">
@@ -7,12 +7,11 @@
                         <div class="footer-infor">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="{{ asset('asset/images/logo/logo.svg') }}" alt="">
+                                    <img src="{{ asset('asset/images/logo.webp') }}" width="150" alt="">
                                 </a>
                             </div>
                             <div class="footer-address">
                                 <p>549 Oak St.Crystal Lake, IL 60014</p>
-                                <a href="contact.html" class="tf-btn-default fw-6">GET DIRECTION<i class="icon-arrowUpRight"></i></a>
                             </div>
                             <ul class="footer-info">
                                 <li>
@@ -42,24 +41,12 @@
                                 </div>
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
-                                        <li class="text-caption-1">
-                                            <a href="about-us.html" class="footer-menu_item">About Us</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Our Stories</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Size Guide</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="contact.html" class="footer-menu_item">Contact us</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Career</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="my-account.html" class="footer-menu_item">My Account</a>
-                                        </li>
+                                        <li class="text-caption-1"><a href="{{ config('app.url') }}" class="footer-menu_item">Home</a>
+                                        <li class="text-caption-1"><a href="{{ config('app.url') }}" class="footer-menu_item">About Us</a>
+                                        <li class="text-caption-1"><a href="{{ route('shop', 'new-arrivals') }}" class="footer-menu_item">New Arrivals</a></li>
+                                        <li class="text-caption-1"><a href="{{ route('shop', 'our-collections') }}" class="footer-menu_item">Our Collections</a></li>
+                                        <li class="text-caption-1"><a href="{{ route('shop', 'best-sellers') }}" class="footer-menu_item">Best Sellers</a></li>
+                                        <li class="text-caption-1"><a href="{{ route('find-us') }}" class="footer-menu_item">Find Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -70,7 +57,7 @@
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
                                         <li class="text-caption-1">
-                                            <a href="#" class="footer-menu_item">Shipping</a>
+                                            <a href="#" class="footer-menu_item">Shipping Policy</a>
                                         </li>
                                         <li class="text-caption-1">
                                             <a href="#" class="footer-menu_item">Return & Refund</a>
@@ -80,12 +67,6 @@
                                         </li>
                                         <li class="text-caption-1">
                                             <a href="term-of-use.html" class="footer-menu_item">Terms & Conditions</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="FAQs.html" class="footer-menu_item">Orders FAQs</a>
-                                        </li>
-                                        <li class="text-caption-1">
-                                            <a href="wish-list.html" class="footer-menu_item">My Wishlist</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -135,21 +116,7 @@
                     <div class="col-12">
                         <div class="footer-bottom-wrap">
                             <div class="left">
-                                <p class="text-caption-1">©2024 Modave. All Rights Reserved.</p>
-                                <div class="tf-cur justify-content-end">
-                                    <div class="tf-currencies">
-                                        <select class="image-select center style-default type-currencies">
-                                            <option selected data-thumbnail="{{ asset('asset/images/country/us.svg') }}">USD</option>
-                                            <option data-thumbnail="{{ asset('asset/images/country/vn.svg') }}">VND</option>
-                                        </select>
-                                    </div>
-                                    <div class="tf-languages">
-                                        <select class="image-select center style-default type-languages">
-                                            <option>English</option>
-                                            <option>Vietnam</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <p class="text-caption-1">©{{ date('Y').' '.config('app.name') }}. All Rights Reserved.</p>
                             </div>
                             <div class="tf-payment">
                                 <p class="text-caption-1">Payment:</p>
